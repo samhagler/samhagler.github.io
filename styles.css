@@ -1,0 +1,65 @@
+.title{
+    font: 100px 'Comic Sans MS', sans-serif;
+    text-align: center;
+    border: 1px solid black;
+    margin: 35px;
+    padding: 0px;
+}
+.about{
+    text-align: center
+}
+button{
+    background-color: #d9edff;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0.375rem 0.75rem;
+    text-align: center;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    vertical-align: middle;
+}
+.contact{
+    border: 5px solid red;
+    background-color: #d23fee;
+    font-size: 2rem;
+    cursor: wait;
+    font-family: "Papyrus"
+}
+
+.rainbow-effect{
+    animation: rainbow-animation 5s infinite linear;
+    font: 100px 'Comic Sans MS', sans-serif;
+    text-align: center;
+    border: 3px solid red;
+}
+@keyframes rainbow-animation{
+    0% { color: red; }
+      14% { color: orange; }
+      28% { color: yellow; }
+      42% { color: green; }
+      57% { color: blue; }
+      71% { color: indigo; }
+      85% { color: violet; }
+      100% { color: red; }
+}
+#bgVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+      }
+    body, html {
+    margin: 0;
+    padding: 0;
+    }
+#canvas-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    pointer-events: none;
+}
